@@ -1,0 +1,85 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM VARIABLES*/
+:root {
+    --warm-white: #F7F5F2;  /* Backgrounds, sections, large areas */
+    --soft-sage: #C8D5C3;   /* Accents, buttons, highlights, secondary backgrounds */
+    --warm-grey: #9B9B8E;   /* Borders, dividers, subtle text */
+    --deep-sage: #6B7F6E;   /* Hover states, links, emphasis */
+    --charcoal: #3D3D3D;    /* Primary text, headings, navigation */
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--charcoal);
+    background-color: var(--warm-white);
+}
+
+h1, h2, h3 {
+    font-family: Lora, serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--charcoal);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* LAYOUT */
+header {
+    padding: 2rem 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
