@@ -22,30 +22,116 @@
     </header>
 
     <main>
+        <!-- PAGE HEADER-->
         <section class="page-header">
             <h1>Classes</h1>
+            <p>All levels welcome. Max 12 students per class.</p>
         </section>
 
+        <!-- CLASS FILTERS-->
         <section class="class-filters">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Restorative</button>
-            <button class="filter-btn">Vinyasa</button>
-            <button class="filter-btn">Meditation</button>
+            <label>Filter by:</label>
+            <select id="class-filter" class="filter-dropdown">
+                <option value="all">All Classes</option>
+                <option value="restorative">Restorative Only</option>
+                <option value="vinyasa">Vinyasa Only</option>
+                <option value="meditation">Meditation Only</option>
+                <option value="morning">Morning Classes</option>
+                <option value="midday">Midday Classes</option>
+                <option value="evening">Evening Classes</option>
+            </select>
         </section>
 
+        <!-- CLASS SCHEDULE GRID-->
         <section class="class-schedule">
-            <div class="class-card">
-                <h3>Class Name</h3>
-                <p class="class-type">Restorative</p>
-                <p class="class-time">Monday 6:00 PM</p>
-                <p class="class-teacher">Teacher Name</p>
+            <div class="class-card" data-type="vinyasa" data-time="morning">
+                <span class="class-indicator vinyasa"></span>
+                <h3>Morning Flow</h3>
+                <p class="class-type">Vinyasa</p>
+                <p class="class-time">Monday, Wednesday, Friday - 7:00 AM</p>
+                <p class="class-teacher">Sarah Chen</p>
             </div>
-            <!-- Repeat for more classes -->
+
+            <div class="class-card" data-type="restorative" data-time="morning">
+                <span class="class-indicator restorative"></span>
+                <h3>Gentle Morning</h3>
+                <p class="class-type">Restorative</p>
+                <p class="class-time">Tuesday, Thursday - 7:00 AM</p>
+                <p class="class-teacher">Maya Patel</p>
+            </div>
+
+            <div class="class-card" data-type="vinyasa" data-time="morning">
+                <span class="class-indicator vinyasa"></span>
+                <h3>Weekend Wake Up</h3>
+                <p class="class-type">Vinyasa</p>
+                <p class="class-time">Saturday - 8:00 AM</p>
+                <p class="class-teacher">David Kim</p>
+            </div>
+
+            <div class="class-card" data-type="restorative" data-time="midday">
+                <span class="class-indicator restorative"></span>
+                <h3>Midday Reset</h3>
+                <p class="class-type">Restorative</p>
+                <p class="class-time">Monday, Wednesday, Friday - 12:00 PM</p>
+                <p class="class-teacher">Maya Patel</p>
+            </div>
+
+            <div class="class-card" data-type="meditation" data-time="midday">
+                <span class="class-indicator meditation"></span>
+                <h3>Lunch Hour Meditation</h3>
+                <p class="class-type">Meditation</p>
+                <p class="class-time">Tuesday, Thursday - 12:30 PM</p>
+                <p class="class-teacher">David Kim</p>
+            </div>
+
+            <div class="class-card" data-type="vinyasa" data-time="evening">
+                <span class="class-indicator vinyasa"></span>
+                <h3>After Work Flow</h3>
+                <p class="class-type">Vinyasa</p>
+                <p class="class-time">Monday, Wednesday - 6:00 PM</p>
+                <p class="class-teacher">Sarah Chen</p>
+            </div>
+
+            <div class="class-card" data-type="restorative" data-time="evening">
+                <span class="class-indicator restorative"></span>
+                <h3>Evening Unwind</h3>
+                <p class="class-type">Restorative</p>
+                <p class="class-time">Tuesday, Thursday - 6:30 PM</p>
+                <p class="class-teacher">Maya Patel</p>
+            </div>
+
+            <div class="class-card" data-type="meditation" data-time="evening">
+                <span class="class-indicator meditation"></span>
+                <h3>Meditation & Breath</h3>
+                <p class="class-type">Meditation</p>
+                <p class="class-time">Friday - 6:00 PM</p>
+                <p class="class-teacher">David Kim</p>
+            </div>
+
+            <div class="class-card" data-type="vinyasa" data-time="evening">
+                <span class="class-indicator vinyasa"></span>
+                <h3>Saturday Evening Flow</h3>
+                <p class="class-type">Vinyasa</p>
+                <p class="class-time">Saturday - 5:00 PM</p>
+                <p class="class-teacher">Sarah Chen</p>
+            </div>
+
+            <div class="class-card" data-type="restorative" data-time="morning">
+                <span class="class-indicator restorative"></span>
+                <h3>Sunday Restore</h3>
+                <p class="class-type">Restorative</p>
+                <p class="class-time">Sunday - 9:00 AM</p>
+                <p class="class-teacher">Maya Patel</p>
+            </div>
         </section>
     </main>
 
+    <!-- FOOTER-->
     <footer>
-        <p>&copy; 2025 Rooted Space Yoga</p>
+        <p>&copy; 2026 Rooted Space Yoga</p>
     </footer>
+
+    <!-- SCRIPT LINK-->
+    <script src="script.js"></script>
 </body>
 </html>
